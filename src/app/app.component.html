@@ -1,16 +1,13 @@
-<h1>{{appTitle}}</h1>
-<h1>{{appNo}}</h1>
-<h2>{{ 100 * 2 }}</h2>
-<h2>{{ 100 + 30 }}</h2>
-<h2>{{ getSomeData('Test', 30) }}</h2>
- <!--
-  {} React
-  {{}} Angular
+<app-header [isFixedTop]="true" tag="Tag line Sample" [appTitle]="appTitle">
+  <button class="btn mr-2 btn-primary">Link 1</button>
+  <button class="btn mr-2 btn-danger">Link 2</button>
+  <button class="btn mr-2 btn-success">Link 3</button>
+  <button class="btn mr-2 btn-warning">Link 4</button>
+  <button class="btn mr-2 btn-dark">Link 5</button>
+</app-header>
+<div class="d-flex align-items-stretch mt-5 p-4">
+  <app-sidebar class="d-block w-100"></app-sidebar>
+  <app-main-container></app-main-container>
+</div>
 
-  01. Class
-  02. Propery
-  03. Style
-  04. Basic
-  05. Event
-
--->
+<app-footer></app-footer>
